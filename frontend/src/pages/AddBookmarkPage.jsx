@@ -21,7 +21,7 @@ const AddBookmarkPage = () => {
     });
   };
 
-  const BackendUrl = import.meta.env.VITE_BACKEND_URL
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL || "https://bookmark-manager-backend.onrender.com/api/action"
 
   const createBookmark = async (e) => {
     e.preventDefault();
