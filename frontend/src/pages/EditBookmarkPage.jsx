@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 const EditBookmarkPage = () => {
   const { id } = useParams();
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://bookmark-manager-backend.onrender.com/api/action"
+  const backendUrl = import.meta.env.VITE_BACKEND_URL
   const [bookmarkData, setBookmarkData] = useState({
     category: "",
     title: "",
