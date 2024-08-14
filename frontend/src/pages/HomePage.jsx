@@ -9,8 +9,7 @@ import NoBookmarkFound from "../components/NoBookmarkFound";
 
 const HomePage = () => {
   const [bookmarks, setBookmarks] = useState([]);
-  // const BackendUrl = import.meta.env.VITE_BACKEND_URL || "https://bookmark-manager-backend.onrender.com/api/action"
-  const BackendUrl = import.meta.env.VITE_BACKEND_URL
+    const BackendUrl = import.meta.env.VITE_BACKEND_URL
   const fetchBookmarks = async () => {
     try {
       const response = await axios.get(`${BackendUrl}/getAllBookmarks`);
