@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 const EditBookmarkPage = () => {
   const { id } = useParams();
-  const backendUrl = import.meta.env.VITE_BACKEND_URL
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   const [bookmarkData, setBookmarkData] = useState({
     category: "",
     title: "",
@@ -63,7 +63,7 @@ const EditBookmarkPage = () => {
 
   return (
     <>
-      <div className="w-[80%] mx-auto  bg-opacity-5 mt-5">
+      <div className="w-[80%] mx-auto  bg-opacity-5 pt-[9.5rem]">
         <h1 className="text-3xl text-center font-bold py-2 mb-5">
           Edit Bookmark
         </h1>

@@ -34,16 +34,16 @@ const ShowBookmarkItem = ({ category, title, link, _id, fetchBookmarks }) => {
   }, [isDeleted, fetchBookmarks]);
 
   return (
-    <div className="flex items-center justify-between gap-4 px-16 rounded-md py-4 bg-slate-800 w-[80%] bg-opacity-10 border-gray-700 border border-opacity-25 ">
+    <div className="flex items-center justify-between gap-4 px-16 rounded-md py-4 bg-slate-800 w-[60rem]  bg-opacity-10 border-gray-700 border border-opacity-25 ">
       <div>
         <CategoryButton category={category} />
       </div>
-      <div className="overflow-x-auto  ">
-        <p className="text-center ">{title}</p>
-      </div>
+
+      <p className="text-center px-2 break-words overflow-hidden w-[45%]">{title}</p>
+
       <div className="flex items-center gap-2">
         <VisitButton link={link} />
-        <EditBookmarkButton _id={_id}/>
+        <EditBookmarkButton _id={_id} />
         <DeleteBookmarkButton deleteFunction={() => handleDelete(_id)} />
       </div>
     </div>

@@ -21,7 +21,7 @@ const AddBookmarkPage = () => {
     });
   };
 
-  const BackendUrl = import.meta.env.VITE_BACKEND_URL 
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL
 
   const createBookmark = async (e) => {
     e.preventDefault();
@@ -48,7 +48,7 @@ const AddBookmarkPage = () => {
 
   return (
     <>
-      <div className="w-[80%] mx-auto  bg-opacity-5 mt-5">
+      <div className="w-[80%] mx-auto  bg-opacity-5  pt-[9.5rem]">
         <h1 className="text-3xl text-center font-bold py-2 mb-5">
           Add a Bookmark
         </h1>

@@ -9,7 +9,7 @@ import NoBookmarkFound from "../components/NoBookmarkFound";
 
 const HomePage = () => {
   const [bookmarks, setBookmarks] = useState([]);
-    const BackendUrl = import.meta.env.VITE_BACKEND_URL
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL;
   const fetchBookmarks = async () => {
     try {
       const response = await axios.get(`${BackendUrl}/getAllBookmarks`);
@@ -29,7 +29,7 @@ const HomePage = () => {
 
   return (
     <>
-      <hr className="py-3 opacity-0" />
+      <hr className="py-3  pb-36 md:pb-24 opacity-0" />
       { bookmarks && bookmarks.length > 0 ? bookmarks.map((item, index) => {
         return <ShowBookmarkLists item={item} key={index} fetchBookmarks={fetchBookmarks}/>;
        

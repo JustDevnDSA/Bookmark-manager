@@ -4,17 +4,17 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-   <>
-     <div className="flex w-[80%] mt-3 mx-auto  py-2 items-center justify-between">
-      <Logo />
-      <div>
-        <Link to={"/addBookmark"}>
-        <AddBookmarkButton />
-        </Link>
+    <>
+      <div className="flex w-full lg:px-28 xl:px-32 2xl:px-36 md:px-24 mt-3 mx-auto  py-2 items-center justify-between flex-col gap-3.5 md:flex-row md:gap-0   fixed top-0 z-20">
+        <Logo />
+        <div>
+          <Link to={"/addBookmark"}>
+            <AddBookmarkButton />
+          </Link>
+        </div>
       </div>
-    </div>
-    <hr className="w-[90%] mx-auto mt-3 opacity-15"/>
-   </>
+      <hr className="w-full  fixed z-20 mt-[9rem] md:mt-20 opacity-15" />
+    </>
   );
 };
 

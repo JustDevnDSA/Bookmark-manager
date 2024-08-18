@@ -5,7 +5,7 @@ const ShowBookmarkLists = ({item,fetchBookmarks}) => {
   const { category,link,title,_id } = item
   return (
     <>
-      <div className="flex justify-center flex-col items-center pt-4">
+      <div className="flex justify-center flex-col items-center pt-4  px-[32rem]  ">
         <ShowBookmarkItem
           category={category}
           link={link}
